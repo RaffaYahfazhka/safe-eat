@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="img/logo.png">
+<title>Home - Safe-eat</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f3f5f7;
+  display:flex;
+  justify-content:center;
+  min-height:100vh;
+  overflow-y:auto;
+}
+
+.mobile-container{
+  width:100%;
+  max-width:430px;
+  margin:auto;
+  min-height:100vh;
+  background:white;
+  overflow:visible;
+}
+
+/* HEADER */
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 16px;
+  background:white;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  position:relative;
+  z-index:10;
+}
+
+.logo{
+height:36px;
+}
+
+.profile{
+height:44px;
+}
+
+/* BODY */
+
+.body{
+position:relative;
+}
+
+.bg-home{
+width:100%;
+display:block;
+}
+
+.element-home{
+position:absolute;
+top:120px;
+left:0;
+width:100%;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+  position:fixed;
+  bottom:0;
+  width:430px;
+  background:white;
+  display:flex;
+  justify-content:space-around;
+  padding:10px 0;
+  box-shadow:0 -3px 10px rgba(0,0,0,0.08);
+
+  left:50%;
+  transform:translateX(-50%);
+  /* width:100%; */
+  max-width:430px;
+}
+
+.bottom-nav img{
+height:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="mobile-container">
+
+<!-- HEADER -->
+
+<div class="header">
+  
+<img src="img/logo-horizontal.png" class="logo">
+
+<a href="/profile.html">
+  <img src="img/icon/profile-icon.png" class="profile">
+</a>
+
+</div>
+
+
+<!-- BODY -->
+
+<div class="body">
+
+<img src="img/home/bg-home.png" class="bg-home">
+
+<img src="img/home/element-home.png" class="element-home">
+
+</div>
+
+
+<!-- BOTTOM NAV -->
+
+<div class="bottom-nav">
+
+<a href="/home.html">
+  <img src="img/button/home-button.png">
+</a>
+
+<a href="/peta.html">
+  <img src="img/button/peta-button.png">
+</a>
+
+<a href="/lapor.html">
+  <img src="img/button/lapor-button.png">
+</a>
+
+<a href="/profile.html">
+  <img src="img/button/profil-button.png">
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

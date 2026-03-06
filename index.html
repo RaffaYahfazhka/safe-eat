@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="img/logo.png">
+<title>Safe-eat</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #eef1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* container biar kelihatan kayak layar HP */
+.mobile-container {
+  width: 430px;
+  height: 100%;
+  background: #e9eff2;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 20px 40px rgba(0,0,0,0.1); */
+}
+
+/* splash content */
+.splash {
+  text-align: center;
+}
+
+.splash img {
+  width: 220px;
+  height: auto;
+  margin-left: 14px;
+
+  animation: fadeSlide 1.5s ease-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
+</head>
+
+<script>
+setTimeout(function(){
+  window.location.href = "home.html";
+}, 2500); // 2.5 detik
+</script>
+
+<body>
+
+<div class="mobile-container">
+  <div class="splash">
+    <img src="img/logo.png" alt="Safe-eat Logo">
+  </div>
+</div>
+
+</body>
+</html>
